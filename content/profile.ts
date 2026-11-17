@@ -1,8 +1,8 @@
 export const email = 'sallahbamou@gmail.com';
 export const phone = { text: '07 51 17 87 44', href: '+33751178744' };
-export const cv = '/Sallah-Bamou-CV.pdf';
 export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 export const asset = (path:string) => basePath+path;
+export const cv = asset('/Sallah-Bamou-CV.pdf');
 export const locales = ['fr','en'] as const;
 export type Locale = typeof locales[number];
 export type Bi = [string,string];
@@ -38,3 +38,4 @@ export const skills: { name:Bi; items:Bi[]; evidence:{label:Bi; target:string}[]
  {name:['Outils & données','Tools & data'],items:[['Excel avancé','Advanced Excel'],['Sage Comptabilité et Sage Paie','Sage Accounting and Sage Payroll'],['Traitement des données ; intérêt pour l’automatisation et la Business Intelligence','Data processing; interest in automation and business intelligence']],evidence:[{label:['Travaux en cabinet fiduciaire','Accounting firm experience'],target:'#experience-3'}]},
  {name:['Langues','Languages'],items:[['Arabe · langue maternelle','Arabic · native'],['Français · courant','French · fluent'],['Anglais · opérationnel','English · working proficiency'],['Espagnol · débutant','Spanish · beginner']],evidence:[]}
 ];
+
